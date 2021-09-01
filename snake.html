@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>mySnake</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="snake.css">
+</head>
+
+<body style="background-image:url() ;">
+  <script>
+    AOS.init();
+  </script>
+    <div id="title"data-aos="fade-up"  
+    data-aos-duration="1500"
+    data-aos-easing="ease-in-out">
+
+        <h1 style="text-transform: none;"><img src="images/png-transparent-snake-animation-cartoon-snake-animals-photography-fauna-thumbnail.png" style="height: 140px; width: 100px;"> THE SNAKE GAME</h1>
+
+    </div>
+    <div data-aos="fade-up"  
+    data-aos-duration="1500"
+    data-aos-easing="ease-in-out" class="gameArea" style="background-image: url('./images/wp2409705.jpg');">
+        <canvas id="canvas" width="623" height="623"></canvas>
+    </div>
+
+    <div class='infoDashboard' data-aos="fade-up"  
+    data-aos-duration="1500"
+    data-aos-easing="ease-in-out">
+        <div class="textArea">
+            <div class="line1">Click Here</div>
+            <div class="line2"></div>
+            <div class="line-third"></div>
+        </div>
+    </div>
+
+    <div class="additionalOptions" data-aos="fade-up"  
+    data-aos-duration="1500"
+    data-aos-easing="ease-in-out">
+        <div class="score">SCORE: 0</div>
+        <div class="current-speed">Current speed: <a class="your-speed"> Easy</a></div>
+        
+
+        <div class="dropdown">
+            <a class="dropbtn">Level</a>
+            <div class="dropdown-content">
+                <a href="#">Easy</a>
+                <a href="#">Medium</a>
+                <a href="#">Hard</a>
+            </div>
+        </div>
+       
+        <div class="goThroughWalls">
+            <label class="check" for="walls">Go through walls</label>
+            <input type="checkbox" id="walls">
+        </div>
+    </div>
+    </div>
+    <div id="high-score" data-aos="fade-right">High Score: 0</div>
+    <script src="snake.js"></script>
+</body>
+
+</html>
